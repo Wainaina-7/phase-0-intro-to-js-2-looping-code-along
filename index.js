@@ -1,10 +1,19 @@
 // Code your solutions in this file
 function writeCards(names, event) {
-    return names.map(name => `Thank you, ${name}, for the wonderful ${event} gift!`);
+  let messages = [];
+  
+  for (let i = 0; i < names.length; i++) {
+    let message = `Thank you, ${names[i]}, for the wonderful ${event} gift!`;
+    messages.push(message);
   }
-  function countDown(start) {
-    for (let i = start; i >= 0; i--) {
+  
+  return messages;
+}
+
+  function countDown(number) {
+    for (let i = number; i >= 0; i--) {
       console.log(i);
     }
   }
+  
   
